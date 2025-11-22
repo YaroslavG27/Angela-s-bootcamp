@@ -8,3 +8,7 @@ ol {
 p.note {
   color: red;
 }
+
+.note {
+  font-size: 20px;
+}

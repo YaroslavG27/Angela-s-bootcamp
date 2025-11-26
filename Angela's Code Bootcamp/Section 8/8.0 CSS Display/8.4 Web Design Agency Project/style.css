@@ -9,13 +9,66 @@ body {
 .main {
   flex: 1;
 }
-
+span {
+  color: rgb(25, 25, 112);
+}
 h1 {
   font-size: 5rem;
+  text-align: left;
 }
 
 footer {
   text-align: right;
   color: midnightblue;
+  clear: left;
+}
+.tile-image {
+  float: left;
+  height: 200px;
+  width: 300px;
+  margin-right: 50px;
+}
+.left .right {
+  display: inline-block;
+  text-align: center;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.card-title {
+  margin: 16px 0px;
+  text-align: left;
+}
+.card-text {
+  margin: 16px 0px;
+  text-align: left;
+}
+.card {
+  width: 45%;
 }
 
+@media (max-width: 680px) {
+  .main {
+    display: block;
+  }
+  h1 {
+    text-align: center;
+  }
+
+  .card img {
+    margin-bottom: 10px;
+    width: 100%;
+    display: inline;
+    object-fit: cover;
+  }
+
+  .card {
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+    text-align: justify;
+  }
+}
